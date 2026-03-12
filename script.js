@@ -1,6 +1,6 @@
 const hamMenu=document.querySelector(".menuBtn")
 const sideBar=document.querySelector(".sidebar")
-
+const callBtn=document.querySelector(".callBtn")
 hamMenu.addEventListener('click',()=>{
     
    sideBar.classList.toggle("activeBar")
@@ -9,4 +9,8 @@ hamMenu.addEventListener('click',()=>{
     hamMenu.children[2].classList.toggle("mbar")
     
 
+})
+callBtn.addEventListener('click',()=>{
+     window.location.href = `tel:${+916289672155}`;
+     console.log("clicked")
 })
