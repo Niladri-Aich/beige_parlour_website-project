@@ -223,7 +223,9 @@ nav{
 }
 .callBtn:hover{
     box-shadow: 4px 6px 4px var(--shadow1);
-    
+    position: relative;
+    right:-4px;
+    transition: 1s ease-in-out; 
 }
 
 /* Service Section Design */
@@ -265,7 +267,10 @@ nav{
 }
 .round:hover{
     box-shadow: 4px 4px 6px var(--shadow1);
-    border:3px solid var(--btn_color)
+    /* border:3px solid var(--btn_color) */
+    position: relative;
+    top:-10px;
+    transition: ease-in-out;
 }
 .serviceText{
     
@@ -285,12 +290,99 @@ nav{
     flex-wrap: wrap;
     align-items: center;
     cursor: pointer;
-    
+    user-select: none;
 }
 
+/* why choose us section design */
+.section3{
+    user-select: none;
+    -webkit-user-select:none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.section3>h1{
+    text-align: center;
+    font-size: 32px;
+    color: var(--btn_color);
+}
+.card_container{
+    display: flex;
+    justify-content: space-evenly;
+    gap:4vh;
+    flex-wrap: wrap;
+    padding : 4vh 4vw;
 
-
-
+}
+.card{
+    user-select: none;
+    position: relative;
+    
+    cursor: pointer;
+    width:400px;
+    height:300px;
+    background: var(--primary_color);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 6px 12px 20px var(--shadow1);
+    
+}
+.card:hover{
+    top:-10px;
+    transition: all 5ms ease-out;
+    
+}
+.desc{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:15px;
+}
+.desc>h1{
+    font-size: 32px;
+    color:white;
+    font-weight: 600;
+   
+}
+.desc>p{
+    font-family: poppins;
+    font-weight: 500;
+    color:white;
+    opacity: 0.7;
+}
+.card_image{
+    width:55%;
+    height:100%;
+    background: #000;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 90% 100%;
+    position: absolute;
+    object-fit: cover;
+    right:-20%;
+    ;
+    background-size: cover;
+    background-position: -80px;
+    background-repeat: no-repeat;
+   
+}
+.c1>.card_image{
+    background-image: url(images/card_images/makeup-artist-applying-makeup-by-brush.jpg);
+}
+.c2>.card_image{
+    background-image: url(images/card_images/products.jpg);
+}
+.c3>.card_image{
+    background-image: url(images/card_images/hygine.jpg);
+     background-position: -150px;
+}
+.c4>.card_image{
+    background-image: url(images/card_images/home.jpg);
+}
 
 @media (max-width:900px){
     .navContainer{
