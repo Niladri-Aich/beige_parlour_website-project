@@ -1,7 +1,7 @@
 const loadingScreen=document.querySelector(".loading"); 
 const hamMenu=document.querySelector(".menuBtn")
 const sideBar=document.querySelector(".sidebar")
-const callBtn=document.querySelector(".callBtn")
+const callBtn=document.querySelectorAll(".callBtn")
 const prevBtn=document.querySelector(".prev")
 const nextBtn=document.querySelector(".next")
 const slideDots=document.querySelectorAll(".dot")
@@ -21,9 +21,14 @@ hamMenu.addEventListener('click',()=>{
     
 
 })
-callBtn.addEventListener('click',()=>{
+
+
+const callFunction=()=>{
      window.location.href = `tel:${+916289672155}`;
      console.log("clicked")
+}
+callBtn.forEach((e)=>{
+     e.addEventListener('click',callFunction)
 })
 
 let slidePointer=0;
@@ -94,9 +99,11 @@ const previousSlide=()=>{
      slideDots[slidePointer].classList.add("activeDot")
 
 }
+const servicesbtns = document.querySelectorAll(".btn")
 
-
-
+servicesbtns[0].addEventListener('click',()=>{
+     window.location.href="services.html#Nails"
+})
 
 
 
