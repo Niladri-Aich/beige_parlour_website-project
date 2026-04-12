@@ -11,16 +11,37 @@
 
 
 .services_container1{
-    margin:0px auto;
-    max-width: 90vw;
+    margin: 0px auto;
+    max-width: 100vw;
     height:200px;
     display: flex;
     overflow: scroll;
-    justify-content: center;
+  
     align-items: center;
-    gap:30px;
+   
+     
+
     scrollbar-width: none;
+    &:hover  .group{
+        animation-play-state:paused;
+        transform: translateX(0%);
+    }
 }
+
+.group{
+    width:100vw;
+    padding-right: 10px;
+    display: flex;
+    gap:30px;
+    justify-content: space-around;
+    padding-right:30px;
+    will-change: transform;
+     animation:  scroll 5s ease-in-out;
+     
+}
+
+
+
 .sname{
     font-size: 24px;
     color:var(--btn_color);
@@ -31,7 +52,21 @@
     flex-direction: column;
     align-items:center ;
     gap:4px;
-
+   
+    z-index: 9999;
+   
+}
+@keyframes scroll {
+    0%{
+       transform:translateX(0%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+   
 }
 
 .serviceImage{
@@ -131,14 +166,20 @@
     flex-wrap: wrap;
     margin-bottom: 40px;
 }
+.inactive{
+    display: none;
+}
 
 .product_card{
     width:350px;
     height:220px;
-    border: 4px solid var(--primary_color);
-    background: white;
+    /* border: 0.2px solid var(--primary_color); */
+    background-color: white;
+   
+   
     border-radius: 12px;
     box-shadow: 4px 10px 20px var(--shadow1);
+    user-select: none;
 }
 .product_card:hover{
     box-shadow: 10px 20px 20px var(--shadow1);

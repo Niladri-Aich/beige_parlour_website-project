@@ -1,0 +1,217 @@
+[
+  {
+    "section": "skin",
+    "products": [
+      {
+        "item": "O3+ Professional Facial Brightening( 4 Step )",
+        "price": 1500
+      },
+      {
+        "item": "O3+ Professional Anti Tan(4 Step)",
+        "price": 1500
+      },
+      {
+        "item": "O3+ Professional Anti Acne",
+        "price": 2000
+      },
+      {
+        "item": "O3+ Professional Anti Aging Facial",
+        "price": 2000
+      },
+      {
+        "item": "O3+ Professional Vitamin C Facial",
+        "price": 2000
+      },
+      {
+        "item": "O3+ Professional Bridal",
+        "price": 2500
+      },
+      {
+        "item": "Anti Acne Treatment",
+        "price": 1200
+      },
+      {
+        "item": "Ozone Treatment",
+        "price": 1000
+      },
+      {
+        "item": "Hydra Facial Treatment",
+        "price": 1999
+      },
+      {
+        "item": "L.E.D",
+        "price": 999
+      },
+      {
+        "item": "Mix-Fruit Facial",
+        "price": 399
+      },
+      {
+        "item": "De-Tan  Facial",
+        "price": 499
+      },
+      {
+        "item": "De-Tox Facial",
+        "price": 499
+      },
+      {
+        "item": "Gold Facial",
+        "price": 650
+      },
+      {
+        "item": "Diamond Facial",
+        "price": 750
+      },
+      {
+        "item": "Instant Glow Facial",
+        "price": 950
+      },
+      {
+        "item": "Korean Glow Facial",
+        "price": 950
+      },
+      {
+        "item": "Bridal  Facial",
+        "price": 1200
+      },
+      {
+        "item": "Face De-Tan",
+        "price": 199
+      },
+      {
+        "item": "Both Hand De-Tan",
+        "price": 250
+      },
+      {
+        "item": "Back De-Tan",
+        "price": 199
+      }
+    ]
+  },
+  {
+    "section": "hair",
+    "products": [
+      {
+        "item": "All Type of Hair Cut Starting From",
+        "price": 300
+      },
+      {
+        "item": " Hair Smoothening SPA",
+        "price": 599
+      },
+      {
+        "item": "Hair Repairing Spa",
+        "price": 799
+      },
+      {
+        "item": "Keratin Spa",
+        "price": 900
+      },
+      {
+        "item": "Anti Dandruff SPA",
+        "price": 1200
+      },
+      {
+        "item": "Anti-Hairfall-Spa",
+        "price": 1200
+      },
+      {
+        "item": "Hair straightening",
+        "price": 1999
+      },
+      {
+        "item": "Hair Smootheing",
+        "price": 1999
+      }
+    ]
+  },
+  {
+    "section": "nails",
+    "products":[
+
+      { 
+        "item": "Hard Gel Nail Extension Both Hands Starting From",
+        "price": 599
+      },
+      {
+        "item":"Hard Gel Nail Extension Single Hand Starting From",
+        "price":399
+      },
+      {
+        "item":"Nails Polish, Nail Arts ",
+         "Price":null
+      }
+      
+    ]
+
+  },
+  {
+    "section":"mani/pedi",
+    "products":[
+      {
+      "item":"Classic Manicure ",
+      "price":350
+      },
+      {
+        "item":"Classic Pedicure",
+        "price":399
+      },
+      {
+      "item":"Professional Manicure ",
+      "price":550
+      },
+      {
+        "item":"Crystal Pedicure",
+        "price":799
+      },
+      {
+        "item":"Crstal Manicure",
+        "price":699
+      }
+      
+    ]
+  },
+  {
+    "section": "waxing",
+    "products":[
+
+      {
+        "item":"Lipo Wax Both Hand",
+        "price":999
+      },
+      {
+        "item":"Lipo Wax Both Leg",
+        "price":1200
+      },
+      {
+        "item":"Hot Wax Both Hand",
+        "price":450
+      },
+      {
+        "item":"Hot Wax Both Leg",
+        "price":650
+      }
+    ]
+
+  },
+  {
+     "section": "threading",
+    "products":[
+      {
+        "item":"Eyebrow Threading Staring Form",
+        "price":50
+      },
+      {
+        "item":"Threading Full Face",
+        "price":120
+      },
+      {
+        
+        "item":"Upper Lips/ Lower Lips Threading",
+        "price":30
+      }
+      
+    ]
+  }
+
+]
