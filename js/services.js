@@ -42,6 +42,15 @@ options.forEach((elem)=>{
         })
  
 })
+const handleBooking=(pname,price)=>{
+
+  const phoneNumber="+916289672155"
+  const message=(`hi I Want To Book Your Services, Service Name :${pname.innerText}  Price:${price.innerText}`)
+  const encodedMessage=encodeURIComponent(message)
+  const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`; 
+  window.open(url, '_blank')
+  
+}
 
 
 const productContainer=document.querySelector('.products_container')
@@ -71,6 +80,9 @@ const generateProductCard=(item,product_price)=>{
 
     const bookNow=document.createElement('bookNow')
     bookNow.classList.add('bookNow')
+    bookNow.addEventListener('click',()=>{
+        handleBooking(pname,price)
+    })
     const icon=document.createElement('img')
     icon.src="images/UI_ICONS/output-onlinegiftools.gif"
     const text=document.createElement('p')
@@ -123,4 +135,5 @@ async function fetchData() {
 fetchData();
 
 
+//book now btn functionality
 
