@@ -4,6 +4,10 @@ const filterBtn = document.querySelector(".filter");
 const filterOptions=document.querySelector(".filter_options")
 const dropArrow=document.querySelector(".dropArrow")
 const options=document.querySelectorAll(".option")
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const sectionName =urlParams.get('name')
+
 
 const handleDropdown=()=>{
     filterOptions.classList.toggle("activeFilter")
@@ -12,6 +16,7 @@ const handleDropdown=()=>{
 
 filterBtn.addEventListener('click',handleDropdown)
 
+
 //handleFilterBtn
 
     const handleFilter=(filterValue)=>{
@@ -19,20 +24,24 @@ filterBtn.addEventListener('click',handleDropdown)
         psections.forEach((section)=>{
             section.classList.add("inactive")
         })
-        console.log(filterValue)
-        if(filterValue=="ALL SERVICES"){
-           psections.forEach((section)=>{
-            section.classList.remove("inactive")
-        })
         
-        }else{
+        if(filterValue=="ALL SERVICES"){
+            psections.forEach((section)=>{
+            section.classList.remove("inactive")
+            })
+        
+        }
+        else{
             const val=filterValue.toLowerCase();
-            console.log(val)
+           
             const section= document.getElementById(val)
             section.classList.remove('inactive')
+        }
+
         
-    }
 }
+
+
 
 options.forEach((elem)=>{
     elem.addEventListener('click',(e)=>{
@@ -114,10 +123,6 @@ const handleData=(data)=>{
 
 
 
-//fetching Data from Json
-
-
-
 async function fetchData() {
     try {
         const response = await fetch('./services.json');
@@ -128,12 +133,14 @@ async function fetchData() {
         data.forEach((e)=>{
             handleData(e);
         })
+        if(sectionName){
+            filterBtn.children[0].innerText=sectionName.toUpperCase()
+            handleFilter(sectionName)
+        }
     } catch (error) {
         console.error('Error fetching data:', error);
     }
 }
 fetchData();
-
-
-//book now btn functionality
+ 
 

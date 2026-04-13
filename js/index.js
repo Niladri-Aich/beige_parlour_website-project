@@ -71,3 +71,14 @@ const previousSlide=()=>{
      slideDots[slidePointer].classList.add("activeDot")
 
 }
+
+//adding functionality to service category btns
+
+const btns=document.querySelectorAll(".btn")
+
+btns.forEach((btn)=>{
+     btn.addEventListener('click',()=>{
+          const btnId=btn.id
+          window.location.href=`/services.html?name=${btn.id}`
+     })
+})
