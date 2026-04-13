@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{ margin: 0;
  padding: 0;
- font-size: 16px;
+ 
 }
 
 
@@ -66,6 +66,7 @@ nav{
     flex-direction: column;
     align-items: flex-start ;
     font-weight: 600;
+    font-size: 18px;
 }
 
 .navContainer{
@@ -75,7 +76,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     background-color: var(--primary_color);
-    margin:   0 4vw;
+    margin:0 4vw;
 }
 .menus{
     
@@ -114,6 +115,7 @@ nav{
     justify-content: center;
     gap:5px;
     font-weight: 600;
+    font-size:18px;
 }
 
 .menus>ul>li>a>img{
@@ -184,9 +186,10 @@ nav{
     background-color: var(--btn_color);
 }
 .sidebar>ul>li>a{
-     width:50vw;
+    width:50vw;
     height: 50px;
     color:var(--text);
+    font-size: 16px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -210,13 +213,14 @@ nav{
     user-select: none;
     --webkit-user-select:none;
     gap:10px;
+    
    
 }
 .callBtn>img{
     width:32px;
 }
 .callBtn>p{
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
     color:var(--text);
 }
@@ -279,7 +283,7 @@ footer{
         width:50px;
     }
     .logo>.logoText{
-        font-size: 20px;
+        font-size: 16px;
     }
     .menus{
         display:none
@@ -308,16 +312,17 @@ footer{
         display: none;
     }
 
-
     /* footer section mobile devive */
     footer{
         justify-content: space-evenly;
+        
     }
 
     .fsection1{
         
         justify-content: center;
         gap:20px;
+        font-size: 16px;
     }
     .fsection2{
         

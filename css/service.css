@@ -43,7 +43,7 @@
 
 
 .sname{
-    font-size: 24px;
+    font-size: 18px;
     color:var(--btn_color);
     font-weight: 600;
 }
@@ -102,7 +102,8 @@
     color:var(--shadow1)
 }
 .filter>p{
-    width:150px
+    width:150px;
+    font-size: 18px;
 }
 
 .filter>img{
@@ -116,7 +117,7 @@
     
     width:224px;
     background: white;
-    font-size: 26px;
+    font-size: 18px;
     font-weight: 600;
     color:var(--shadow1);
     border-radius: 16px;
@@ -208,7 +209,7 @@
     gap:5px;
 }
 .pname,.price{
-    font-size: 20px;
+    font-size: 18px;
 }
 .container2{
     width:350px;
@@ -246,4 +247,15 @@
     .services_container1{
         justify-content: space-evenly;
     }
+
+    .sname,.filterValue,.option{
+        font-size: 16px;
+    }
+    .product_card>.container1>.pdesc>.pname,.price{
+    font-size:16px
+    }
+    .bookNow>P{
+        font-size: 16px;
+    }
+
 }

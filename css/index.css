@@ -35,7 +35,6 @@ body{
     background-repeat: no-repeat;
     
     background-position:  right bottom ;
-
 }
 
 .heroText{
@@ -67,7 +66,7 @@ body{
 }
 
 .serviceSection>h1{
-    font-size: 32px;
+    font-size: 28px;
     color:var(--btn_color);
 }
 .serviceContainer{
@@ -100,7 +99,7 @@ body{
     
     
     color:var(--btn_color);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     display: block;
     padding:0px auto;
@@ -129,7 +128,7 @@ body{
 }
 .section3>h1{
     text-align: center;
-    font-size: 32px;
+    font-size: 28px;
     color: var(--btn_color);
 }
 .card_container{
@@ -167,8 +166,8 @@ body{
     justify-content: center;
     padding:15px;
 }
-.desc>h1{
-    font-size: 32px;
+.desc>.heading{
+    font-size: 28px;
     color:white;
     font-weight: 600;
    
@@ -178,6 +177,7 @@ body{
     font-weight: 500;
     color:white;
     opacity: 0.7;
+    font-size: 16px;
 }
 .card_image{
     width:55%;
@@ -188,7 +188,6 @@ body{
     position: absolute;
     object-fit: cover;
     right:-20%;
-    ;
     background-size: cover;
     background-position: -80px;
     background-repeat: no-repeat;
@@ -223,7 +222,7 @@ body{
 }
 
 .testimonial_section>h1{
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 600;
     color:var(--btn_color);
     max-width: 80vw;
@@ -232,7 +231,7 @@ body{
 }
 .testimonial_container_1{
     /* position: absolute; */
-    margin-top:10vh;
+    margin-top:2vh;
     max-width:100vw;
     box-sizing: border-box;
     overflow: hidden;
@@ -275,13 +274,13 @@ body{
     border: 2px solid var(--btn_color)
 } 
 .cname{
-    font-size:32px;
+    font-size:28px;
     font-weight: 600;
     color:var(--shadow1);
     text-align: center;
 }
 .review_text{
-    font-size: 32px;
+    font-size: 18px;
     font-weight: 400;
    text-align: center;
     color:black;
@@ -399,8 +398,27 @@ body{
         font-weight: 600;
         margin-left: 7vw;
     }
+    .serviceSection>h1{
+        font-size: 22px;
+    }
+    .serviceContainer>.btn{
+        font-size: 16px;
+    }
+
+    .section3>h1{
+        font-size: 22px;
+    }
+    .card>.desc>.heading{
+        font-size: 22px;
+    }
+    .card>.desc>.para{
+        font-size: 14px;
+    }
+    .testimonial_section>h1{
+        font-size: 22px;
+    }
     .callBtn>p{
-        font-size: 1rem;
+        font-size: 16px;
         font-weight: 700;
 
     }
@@ -423,6 +441,12 @@ body{
     }
     .customer_info{
         margin-top: 20px;
+    }
+    .cname{
+        font-size: 22px;
+    }
+    .review_text{
+        font-size: 16px;
     }
     .reviewSection{
         width:90%;
