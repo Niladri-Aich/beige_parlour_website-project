@@ -238,6 +238,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 16px;
 }
 .fsection1{
     width:40%;
